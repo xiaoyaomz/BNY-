@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\架设\梦幻诛仙\笔记\梦诛工具\BnyEditor带搜索\BnyEditor\BnyEditor.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C7DD002-6644-4DB0-A979-FB28B1078D01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>BnyEditor_Margin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>BnyEditor</RootNamespace>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.1.3.1\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.1.3.1\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp">
+      <HintPath>lib\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="zlib.net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileBorserDialog\FolderNameEditor.cs" />
+    <Compile Include="FileBorserDialog\FolderBrowserDialogC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetWork\XReader.cs" />
+    <Compile Include="BnyEditor_Margin\Properties\Resources.cs" />
+    <Compile Include="BnyCommon.cs" />
+    <Compile Include="BnyNetwork.cs" />
+    <Compile Include="BnySearchUtils.cs" />
+    <Compile Include="BnyStruct.cs" />
+    <Compile Include="BnyUtils.cs" />
+    <Compile Include="CheckSerialNumber.cs" />
+    <Compile Include="ChineseStringUtility.cs" />
+    <Compile Include="ComputerInfo.cs" />
+    <Compile Include="CustomShow.cs" />
+    <Compile Include="DataGridViewTextBoxCellEx.cs" />
+    <Compile Include="DataGridViewTextBoxColumnEx.cs" />
+    <Compile Include="DescUtil.cs" />
+    <Compile Include="DoubleBufferDataGridView.cs" />
+    <Compile Include="EncryptHelper.cs" />
+    <Compile Include="FiledItem.cs" />
+    <Compile Include="FileItem.cs" />
+    <Compile Include="FileTypeRegInfo.cs" />
+    <Compile Include="FileTypeRegister.cs" />
+    <Compile Include="FindFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlagInfo.cs" />
+    <Compile Include="FlagTable.cs" />
+    <Compile Include="FlagUtils.cs" />
+    <Compile Include="FrmBatchHot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDescEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditStruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGotoLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmI2F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSaveNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotUpdate.cs" />
+    <Compile Include="HotUpdateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ini.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NPOIException.cs" />
+    <Compile Include="NPOIUtils.cs" />
+    <Compile Include="OffsetStruct.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RootData.cs" />
+    <Compile Include="RSAForJava.cs" />
+    <Compile Include="SearchInfo.cs" />
+    <Compile Include="StringOffsetStruct.cs" />
+    <Compile Include="StructExplain.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BnyEditor_Margin\font_metrics.properties" />
+    <EmbeddedResource Include="BnyEditor_Margin\functionMetadata.txt" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\BouncyCastle\Crypto.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\ICSharpCode\SharpZipLib.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\Newtonsoft\Json.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\NPOI.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\NPOI\OOXML.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\NPOI\OpenXml4Net.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\NPOI\OpenXmlFormats.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\lib\zlib\net.dll" />
+    <EmbeddedResource Include="BnyEditor_Margin\Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7z.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,35 @@
+﻿{
+  "datas": [
+    {
+      "name": "cachievementbigtypecfg",
+      "fileDesc": "",
+      "filed": [
+        {
+          "name": "index",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "name",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "subTypeCfgIdStruct",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "subTypeCfgIds",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "subTypeCfgId",
+          "desc": "",
+          "tip": ""
+        }
+      ]
+    }
+  ]
+}
